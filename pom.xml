@@ -1,0 +1,150 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>sample</groupId>
+  <artifactId>sample</artifactId>
+  <version>0.0.1</version>
+  <packaging>war</packaging>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.1</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-server</artifactId>
+			
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			
+		</dependency>
+	 	<!-- <dependency>
+			<groupId>org.glassfish.jersey.inject</groupId>
+			<artifactId>jersey-hk2</artifactId>			
+		</dependency>  -->
+		<dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		   
+		</dependency>
+		<dependency>
+	    	<groupId>org.glassfish.jersey.media</groupId>
+	    	<artifactId>jersey-media-json-jackson</artifactId>    
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+   			<groupId>org.apache.commons</groupId>
+    		<artifactId>commons-lang3</artifactId>
+   		</dependency>
+   		<dependency>
+    		<groupId>org.apache.commons</groupId>
+   			<artifactId>commons-text</artifactId>
+		</dependency>
+		<dependency>
+		  	<groupId>com.google.firebase</groupId>
+		  	<artifactId>firebase-admin</artifactId>
+	  	</dependency>
+	  	<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-core -->
+<dependency>
+    <groupId>org.glassfish.jersey.media</groupId>
+    <artifactId>jersey-media-multipart</artifactId>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.jvnet.mimepull/mimepull -->
+<dependency>
+    <groupId>org.jvnet.mimepull</groupId>
+    <artifactId>mimepull</artifactId>
+   
+</dependency>
+	  	 <dependency>
+     <groupId>org.glassfish.jersey.media</groupId>
+     <artifactId>jersey-media-sse</artifactId>
+ </dependency>
+	  	
+	</dependencies>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+			<groupId>org.glassfish.jersey.core</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			<version>2.17</version>
+		</dependency>
+		<!-- <dependency>
+			<groupId>org.glassfish.jersey.inject</groupId>
+			<artifactId>jersey-hk2</artifactId>
+			<version>2.17</version>
+		</dependency> -->
+		<dependency>
+   			 <groupId>org.glassfish.jersey.bundles</groupId>
+    		<artifactId>jaxrs-ri</artifactId>
+   			 <version>2.17</version>
+ 		 </dependency>
+ 		  <dependency>
+		     <groupId>org.glassfish.jersey.media</groupId>
+		     <artifactId>jersey-media-sse</artifactId>
+		     <version>2.22.2</version>
+		 </dependency>
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>42.2.5</version>
+		</dependency>
+	<dependency><!-- sssss -->
+		    <groupId>org.glassfish.jersey.media</groupId>
+		    <artifactId>jersey-media-json-jackson</artifactId>
+		    <version>2.17</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.8</version>
+		</dependency>
+		 <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+		<dependency>
+    		<groupId>org.apache.commons</groupId>
+   		 	<artifactId>commons-text</artifactId>
+   		 	<version>1.6</version>
+		</dependency>
+		<dependency>
+		  	<groupId>com.google.firebase</groupId>
+		  	<artifactId>firebase-admin</artifactId>
+		  	<version>6.8.1</version>
+	  	</dependency>
+<dependency>
+    <groupId>org.glassfish.jersey.media</groupId>
+    <artifactId>jersey-media-multipart</artifactId>
+    <version>2.17</version>
+</dependency>
+	  	<!-- https://mvnrepository.com/artifact/org.jvnet.mimepull/mimepull -->
+<dependency>
+    <groupId>org.jvnet.mimepull</groupId>
+    <artifactId>mimepull</artifactId>
+    <version>1.9.3</version>
+</dependency>
+	  
+  	</dependencies>
+  </dependencyManagement>
+</project>
